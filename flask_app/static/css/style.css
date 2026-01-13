@@ -1,0 +1,174 @@
+body {
+    background-color: #060606;
+}
+
+h1 {
+    text-align: center;
+    padding-bottom: 0.7em;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 80px;
+    color: #fe53bb;
+}
+
+h2 {
+    
+    padding-bottom: 0.7em;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 50px;
+    color: #fe53bb;
+}
+h3 {
+    padding-bottom: 0.7em;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 30px;
+    color: #fe53bb;
+}
+h4 {
+    padding-bottom: 0.7em;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 25px;
+    color: #fe53bb;
+}
+img {
+    text-align: center;
+}
+
+
+li {
+   
+    padding-bottom: 0.7em;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 40px;
+    color: #fe53bb;
+    
+}
+
+a {
+    background-color: #fe53bb;
+    color: black;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+form {
+    
+    padding-bottom: 0.7em;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 30px;
+    color: #08f7fe;
+}
+
+p {
+    padding-bottom: 0.7em;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 30px;
+    color: #08f7fe;
+}
+button {
+    
+    padding: 0.7em;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 40px;
+    color: #fe53bb;
+    background-color: #060606;
+    border-radius: 10px;
+    border-color: #fe53bb;
+}
+select {
+    width: auto;
+    height: 50px;
+    background-color: #060606;
+    color: #fe53bb;
+    padding: 0.7em;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 20px;
+    border-radius: 10px;
+    border-color: #fe53bb;
+}
+
+input {
+    width: auto;
+    height: 20px;
+    background-color: #060606;
+    color: #fe53bb;
+    padding: 0.7em;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 20px;
+    border-radius: 10px;
+    border-color: #fe53bb;
+}
+
+
+.main {
+    display: flex;
+    width: 100;
+    justify-content: center;
+}
+
+.survey {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+    width: 1200px;
+}
+
+.checkbox {
+    width: 100px;
+    color: #fe53bb;
+    background-color: #060606;
+}
+
+.reccomendations{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    word-wrap: break-word;
+    width: 1000px;
+}
+.rec_img{
+    max-width: 100%;
+    height: auto;
+}
+
+
+.rec_li {
+    
+    padding-bottom: 0.7em;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 30px;
+    color: #08f7fe;
+    
+}
+.home_list {
+    list-style-type: none;
+}
+
+li::marker {
+    color: #fe53bb;
+  }
+
+.error-message {
+    color: #fe53bb;
+    padding-bottom: 0em;
+}
+
+.survey_submitted{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 1000;
+}
+
+.sur_list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

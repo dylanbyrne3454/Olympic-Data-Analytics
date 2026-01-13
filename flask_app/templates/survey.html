@@ -1,0 +1,108 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+<div class="survey"> 
+    <li class="home_list"><a href="/">Home</a></li>
+    <form id="survey_form" name="survey_form" method="POST" action="{{ url_for('main.submit') }}">
+        <h2>Take this Olympic Games Survey!</h2>
+        <label for="age">Age</label>
+        <select name="age" id="age" class="dropdown">
+            <option value="" disabled selected>What is your age group?</option>
+            <option value="under_18">Under 18</option>
+            <option value="18-24">18-24</option>
+            <option value="25-34">25-34</option>
+            <option value="35-44">35-44</option>
+            <option value="45-54">45-54</option>
+            <option value="55+">55+</option>
+        </select>
+        <p class="error-message"></p>
+       
+        
+        <label for="country">Country</label>
+        <select name="country" id="country" class="dropdown">
+            <option value="" disabled selected>Select your Country</option>
+            {% for country in countries %}
+                <option value="{{ country }}">{{ country }}</option>
+            {% endfor %}
+        </select>
+        <p class="error-message"></p>
+        
+
+        <label for="gender">Gender</label>
+        <select name="gender" id="gender" class="dropdown">
+            <option value="" disabled selected>Select your Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+        <p class="error-message"></p>
+        
+
+
+        <label for="watch_olympics">How often do you watch the Olympics?</label>
+        <select name="watch_olympics" id="watch_olympics" class="dropdown">
+            <option value="" disabled selected>How much?</option>
+            <option value="every_olympics">Every Olympics</option>
+            <option value="occasionally">Occasionally</option>
+            <option value="rarely">Rarely</option>
+            <option value="never">Never</option>
+        </select>
+        <p class="error-message"></p>
+        
+
+        <label for="how_long">How long have you been watching the Olympics? (0-100 years)</label>
+        <input type="text" id="how_long" name="how_long" class="text_input">
+        <p id="number_error" style="color: #fe53bb;"></p>
+        
+        <label for="summer_vs_winter">Which do you prefer?</label>
+        <select name="summer_vs_winter" id="summer_vs_winter" class="dropdown">
+            <option value="" disabled selected>Which?</option>
+            <option value="summer">Summer</option>
+            <option value="winter">Winter</option>
+        </select>
+        <p class="error-message"></p>
+        
+
+        <label for="sport">Favourite Sport</label>
+        <select name="sport" id="sport" class="dropdown">
+            <option value="" disabled selected>Select your favourite Sport</option>
+            {% for sport in sports %}
+                <option value="{{ sport }}">{{ sport }}</option>
+            {% endfor %}
+        </select>
+        <p class="error-message"></p>
+     
+
+        <label for="athlete">Favourite athlete</label>
+        <input type="text" id="athlete" name="athlete" class="text_input">
+        <p class="error-message"></p>
+        
+
+        <label for="follow_olympics">How do you follow the olympics?</label>
+        <select name="follow" id="follow" class="dropdown">
+            <option value="" disabled selected>How do you follow the olympics?</option>
+            <option value="tv">TV</option>
+            <option value="social_media">Social Media</option>
+            <option value="tv">TV</option>
+            <option value="news">News Websites</option>
+            <option value="in_person">In Person</option>
+            <option value="other">Other</option>
+        </select>
+        <p class="error-message"></p>
+        
+
+        <label for="become_Olympian">Do you wish you could become and Olympian?</label>
+        <input type="checkbox" name="become_Olympian"  id="become_Olympian" class="checkbox" value="true"></input>
+        <p class="error-message"></p>
+      
+
+        <button type="submit" onclick="check_how_long()">Submit</button>
+    </form>
+    <p id="validation"></p>
+    <div id="message"></div>
+</div>
+
+{% endblock %}
+

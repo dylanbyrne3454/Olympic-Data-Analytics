@@ -1,0 +1,11 @@
+venv/
+__pycache__/
+*.pyc
+*.db
+*.sqlite
+instance/
+.env
+.flaskenv
+.DS_Store
+flask_app/__pycache__/
+dash_apps/__pycache__/

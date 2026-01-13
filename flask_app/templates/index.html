@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="main">
+    <img src="{{ url_for('static', filename='images/1140-london-olympics.jpg') }}" >
+    <ul class="home_list">
+        <li class="home_list">
+            <a href="/main_dashboard">Main Dashboard</a>
+        </li>
+        <li class="home_list">
+            <a href="/survey">Survey</a>
+        </li>
+        <li class="home_list">
+            <a href="/survey_dashboard">Survey Dashboard</a>
+        </li>
+        <li class="home_list">
+            <a href="/recommendations">Recommendations</a>
+        </li>
+        
+    </ul>
+</div>
+{% endblock %}

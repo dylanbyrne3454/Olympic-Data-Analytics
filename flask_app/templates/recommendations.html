@@ -1,0 +1,95 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="reccomendations">
+    <h1>Recommendations</h1>
+    <li class="home_list"><a href="/">Home</a></li>
+    <img class="rec_img" src="{{ url_for('static', filename='images/133149.jpg') }}">
+
+    <h2>1. Sports Development</h2>
+    <p>
+        From my exploration of the most successful countries in the Olympics it has become very clear that
+        the GDP of a country has a huge impact on whether a country succeeds or not. Countries such as the USA, Russia and China dominate
+        while smaller nations or less developed countries such as much of Africa have little or no medals at all.
+    </p>
+    <img class="rec_img" src="{{ url_for('static', filename='images/medals_countrys.png') }}">
+    <h3>
+        Recommendations:
+    </h3>
+    <ul>
+        <li class="rec_li">Develop grassroots programs in
+            underrepresented countries to broaden competition</li>
+        <li class="rec_li">Foster partnerships between established sports nations and developing ones to exchange expertise</li>
+    </ul>
+
+    <img class="rec_img" src="{{ url_for('static', filename='images/shoes_four_running_kenya_youth_sports_development-960x510.webp') }}">
+    
+    <h2>2. Gender Equality</h2>
+    <p>
+        Gender inequality is extremely prevalent within the Olympic's history. It was only in 1900 that women were allowed to compete in the
+        games and it was only in the London games 2012 that every country competing had a women on their team.
+        However it is evident from my analysis that the olympics is becoming much more equal in terms of gender although true equality has not
+        yet been reached. (In the 2024 games there were equal medals for both men and women however my chosen dataset does not surpass 2016)
+    </p>
+    <img class="rec_img" src="{{ url_for('static', filename='images/gender_distribution.png') }}">
+    <h3>
+        Recommendations:
+    </h3>
+    <ul>
+        <li class="rec_li">Ensure equal medal events for men and women in all sports</li>
+        <li class="rec_li">Encourage participation from underrepresented genders by promoting campaigns and increasing funding.</li>
+    </ul>
+  
+    <img class="rec_img" src="{{ url_for('static', filename='images/fu0iezzhvk0edgyv6rob.avif') }}">
+    <h2>3. Introduction of new sports</h2>
+    <p>Throughout olympic history the sports included have grown and changed. This is done in order to keep the games
+        fresh and exiting while also appealing to younger audiences. In the LA games 2028 Baseball, Softball, Cricket, Lacrosse, Squash and Flag football will all be added to the schedule.
+    </p>
+    <img class="rec_img" src="{{ url_for('static', filename='images/LA28-NewOlympicSportProposal_1920x1080_WEB1.jpg') }}">
+    <h3>
+        Recommendations:
+    </h3>
+    <ul>
+        <li class="rec_li">Continuously review and adapt the Olympic program to reflect evolving global interests</li>
+        <li class="rec_li">Consider more regional sports to attract diverse participation</li>
+    </ul>
+    <h2>4. Environmental Sustainability</h2>
+    <p>
+        The Olympics is probably the biggest sporting event on the planet. It attracts millions of tourists and costs billions to
+        run. It also has a huge impact on the environment releasing millions of tons of Carbon Dioxide into the atmosphere every 4 years.
+        A recent change has occurred lately however as The International Olympic Committee has pledged to make the games as green as possible.
+    </p>
+    <img class="rec_img" src="{{ url_for('static', filename='images/1722531797257.png') }}">
+    <h3>
+        Recommendations:
+    </h3>
+    <ul>
+        <li class="rec_li">Avail of already existing infrastructure and stadiums instead of building everything from scratch</li>
+        <li class="rec_li">Ensure that any venues or infrastructure created for the games have a purpose after the games conclude</li>
+        <li class="rec_li">Use Venues that are closer to each-other or are accessible by public transport</li>
+        <li class="rec_li">Remove the use of single use plastics in venues</li>
+    </ul>
+
+    <h2>5.Historical legacy and global collaboration</h2>
+    <p>The Olympics throughout history has always been an event that
+        has shown the best of humanity. It is a place where every nation
+        is equal and where political rivalries have been put aside. The Olympics have
+        inspired younger generations throughout the years, promoting health, fitness and sport
+        as well as fostering the next generation of athletes. The Games have also put on show many unique and 
+        diverse cultures throughout the world displaying the best best that humanity have to offer.
+    
+        
+    </p>
+    <img class="rec_img" src="{{ url_for('static', filename='images/INTE_52469_619568.jpg') }}">
+    <h3>
+        Recommendations:
+    </h3>
+    <ul>
+        <li class="rec_li">Use the games as a platform to promote peacebuilding</li>
+        <li class="rec_li">Highlight stories of resilience, inclusivity, and shared humanity through the Games </li>
+        <li class="rec_li">Use the games as a means to share cultures and traditions</li>
+    </ul>
+    <img class="rec_img" src="{{ url_for('static', filename='images/674f1a57a0e8a8001d75f3f5.jpg') }}">
+    <br>
+</div>
+{% endblock %}
